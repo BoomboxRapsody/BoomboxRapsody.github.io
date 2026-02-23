@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website Homepage HTML and CSS | CodingNepal</title>
+    <link rel="stylesheet" href="./new/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h2 class="logo"><a href="#"><img src="logo.png" width=200></img></a></h2>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </label>
+        <ul class="links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">YouTube Player EX</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="#" class="signin">GitHub</a>
+          <a href="#" class="signup" onclick="downloadClient();">Download</a>
+        </div>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero">
+        <h2>YouTube Player EX</h2>
+        <p>
+          The enhanced YouTube video player written in osu-framework.
+		  No ads, No bloatware, Only simply design.
+        </p>
+        <div class="buttons">
+          <a href="#" class="join" onclick="downloadClient();">Download</a>
+          <a href="https://github.com/BoomboxRapsody/YouTubePlayerEX" class="learn">View on Github</a>
+        </div>
+      </div>
+      <div class="img">
+        <img src="youtube-player-ex-capture.png" alt="screenshot image" />
+      </div>
+    </section>
+	
+	<script src ="./new/platform-detector.js"></script>
+  </body>
+</html>
