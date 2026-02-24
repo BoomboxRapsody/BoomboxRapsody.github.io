@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Player EX | MayoDev Studios</title>
     <link rel="stylesheet" href="./new/main.css" />
+	<link rel="icon" href="./favicon.ico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=check_circle,close" />
+	<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+	<script src ="./localizer.js" type="text/javascript"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="navbar">
         <h2 class="logo"><a href="#"><img src="logo.png" width=200></img></a></h2>
         <input type="checkbox" id="menu-toggle" />
@@ -17,13 +21,13 @@
           </svg>
         </label>
         <ul class="links">
-          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html"><localized-text key="home"></localized-text></a></li>
           <li><a href="#">YouTube Player EX</a></li>
-          <li><a href="./about.html">About</a></li>
+          <li><a href="./about.html"><localized-text key="about"></localized-text></a></li>
         </ul>
         <div class="buttons">
-          <a href="#" class="signin">GitHub</a>
-          <a href="#" class="signup" onclick="downloadClient();">Download</a>
+          <a href="https://github.com/BoomboxRapsody/YouTubePlayerEX" class="signin">GitHub</a>
+          <a href="#" class="signup" onclick="downloadClient();"><localized-text key="download"></localized-text></a>
         </div>
       </nav>
     </header>
@@ -31,19 +35,106 @@
       <div class="hero">
         <h2>YouTube Player EX</h2>
         <p>
-          The enhanced YouTube video player written in osu-framework.
-		  No ads, No bloatware, Only simply design.
+          <localized-text key="yt_player_ex_desc"></localized-text>
         </p>
         <div class="buttons">
-          <a href="#" class="join" onclick="downloadClient();">Download</a>
-          <a href="https://github.com/BoomboxRapsody/YouTubePlayerEX" class="learn">View on Github</a>
+          <a href="#" class="join" onclick="downloadClient();"><localized-text id="dl_text" key="download"></localized-text></a>
+          <a href="https://github.com/BoomboxRapsody/YouTubePlayerEX" class="learn"><localized-text key="view_on_github"></localized-text></a>
         </div>
       </div>
       <div class="img">
         <img src="youtube-player-ex-capture.png" alt="screenshot image" />
       </div>
     </section>
+	<section class="hero-section-2">
+      <div class="hero">
+        <h2><localized-text key="no_ads"></localized-text></h2>
+        <p>
+          <localized-text key="no_ads_desc"></localized-text>
+        </p>
+      </div>
+      <div class="img">
+        <img src="listen-to-the-music.png"/>
+      </div>
+    </section>
+	<section class="hero-section-3">
+      <div class="hero-2">
+        <h2><localized-text key="compare"></localized-text></h2>
+		<div class="app-list">
+		<div class="app-item-extra transparent_bg">
+					<h2 class="transparent">YouTube Player EX</h2>
+					<hr />
+					<h3 class="extra_padding"><localized-text key="ad_free"></localized-text></h3>
+					<hr />
+					<h3 class="extra_padding"><localized-text key="bg_play"></localized-text></h3>
+					<hr />
+					<h3 class="extra_padding"><localized-text key="audio_effects"></localized-text></h3>
+					<hr />
+					<h3 class="extra_padding"><localized-text key="video_effects"></localized-text></h3>
+				</div>
+			<div class="app-item">
+					<h2>YouTube 기본</h2>
+					<hr />
+					<span class="material-symbols-outlined">
+					close
+					</span>
+					<hr />
+					<span class="material-symbols-outlined">
+					close
+					</span>
+					<hr />
+					<span class="material-symbols-outlined">
+					close
+					</span>
+					<hr />
+					<span class="material-symbols-outlined">
+					close
+					</span>
+				</div>
+				<div class="app-item">
+					<h2>YouTube Premium</h2>
+					<hr />
+					<span class="material-symbols-outlined">
+						check_circle
+					</span>
+					<hr />
+					<span class="material-symbols-outlined">
+						check_circle
+					</span>
+					<hr />
+					<span class="material-symbols-outlined">
+					close
+					</span>
+					<hr />
+					<span class="material-symbols-outlined">
+					close
+					</span>
+				</div>
+				<div class="app-item">
+                <h2>YouTube Player EX</h2>
+				<hr />
+                <span class="material-symbols-outlined">
+					check_circle
+				</span>
+				<hr />
+                <span class="material-symbols-outlined">
+					check_circle
+				</span>
+				<hr />
+                <span class="material-symbols-outlined">
+					check_circle
+				</span>
+				<hr />
+                <span class="material-symbols-outlined">
+					check_circle
+				</span>
+            </div>
+	  </div>
+		  </div>
+      </div>
+    </section>
 	
 	<script src ="./new/platform-detector.js"></script>
+	<script src ="./new/topbar_fade.js"></script>
   </body>
 </html>
