@@ -1,6 +1,6 @@
 var dictionary = {
     "_": { // when language is not supported
-        "about": "About",
+        "about": "Privacy Policy",
 		"download": "Download",
 		"home": "Home",
 		"view_on_github": "View on GitHub",
@@ -16,7 +16,7 @@ var dictionary = {
 		"video_effects": "Video visual effects",
     },
     "en": {
-        "about": "About",
+        "about": "Privacy Policy",
 		"download": "Download",
 		"home": "Home",
 		"view_on_github": "View on GitHub",
@@ -32,7 +32,7 @@ var dictionary = {
 		"video_effects": "Video visual effects",
     },
     "ja": {
-        "about": "About",
+        "about": "Privacy Policy",
 		"download": "Download",
 		"home": "Home",
 		"view_on_github": "View on GitHub",
@@ -48,7 +48,7 @@ var dictionary = {
 		"video_effects": "Video visual effects",
     },
 	"ko": {
-        "about": "정보",
+        "about": "개인정보처리방침",
 		"download": "다운로드",
 		"home": "홈",
 		"view_on_github": "GitHub에서 소스 코드 보기",
