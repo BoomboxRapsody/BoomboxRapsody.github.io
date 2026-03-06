@@ -8,12 +8,12 @@ function downloadClient()
 	{
 		case "Win32": 
 		{
-			window.location.href = "https://github.com/BoomboxRapsody/YouTubePlayerEX/releases/latest/download/YouTubePlayerEX-win-Setup.exe";
+			window.location.href = "https://github.com/BoomboxRapsody/NekoPlayer/releases/latest/download/NekoPlayer-win-Setup.exe";
 			break;
 		}
 		case "Linux x86_64": 
 		{
-			window.location.href = "https://github.com/BoomboxRapsody/YouTubePlayerEX/releases/latest/download/YouTubePlayerEX-linux-x64.AppImage";
+			window.location.href = "https://github.com/BoomboxRapsody/NekoPlayer/releases/latest/download/NekoPlayer-linux-x64.AppImage";
 			break;
 		}
 	}
@@ -70,7 +70,7 @@ async function getLatestRelease(owner, repo) {
 }
 
 // 예시: ultralytics/yolov5
-getLatestRelease('BoomboxRapsody', 'YouTubePlayerEX');
+getLatestRelease('BoomboxRapsody', 'NekoPlayer');
 
 function getLang() {
     var lang = (navigator.languages != undefined)?navigator.languages[0]:navigator.language;
