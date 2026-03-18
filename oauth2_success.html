@@ -1,0 +1,71 @@
+<html>
+  <head>
+	<title>NekoPlayer | OAuth 2.0 Authentication Token Received</title>
+	<style>
+	body {
+		height: 100vh;
+		display: flex;
+		overflow: hidden;
+		align-content: center;
+		justify-content: center;
+		background-color: black;
+	}
+	
+	.text {
+		color: white;
+	}
+	</style>
+  </head>
+  <body>
+	<h3 class="text">
+		<localized-text key="received_verification_code"/>
+	</h3>
+	
+	<script>
+	var dictionary = {
+    "_": { // when language is not supported
+        "received_verification_code": "Received verification code. You may now close this window.",
+    },
+    "en": {
+        "received_verification_code": "Received verification code. You may now close this window.",
+    },
+    "ja": {
+        "received_verification_code": "確認コードを受信しました。 このウィンドウを閉じることができます。",
+    },
+	"ko": {
+        "received_verification_code": "인증 코드를 수신했어요. 이제 이 창을 닫을 수 있어요.",
+    }
+}
+
+class HTMLLocalizer {
+    constructor() {
+        customElements.define('localized-text', LocalizedTextElement);
+    }
+}
+
+class LocalizedTextElement extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        var key = this.hasAttribute('key') ? this.getAttribute('key') : ''; 
+        var lang = this.hasAttribute('lang') ? this.getAttribute('lang') : this.getLang();
+        this.innerHTML = this.translate(key, lang);
+    }
+
+    getLang() {
+        var lang = (navigator.languages != undefined)?navigator.languages[0]:navigator.language;
+        // Ignore country code (example: en-US -> en)
+        return lang.split("-")[0];
+    }
+    
+    translate(key, lang) {
+        return (lang in dictionary)?dictionary[lang][key]:dictionary['_'][key];
+    }
+}
+  
+new HTMLLocalizer();
+	</script>
+  </body>
+</html>
