@@ -4,19 +4,7 @@ function downloadClient()
 	
 	console.log("The platform is " + platform);
 	
-	switch (platform) 
-	{
-		case "Win32": 
-		{
-			window.location.href = "https://github.com/BoomboxRapsody/NekoPlayer/releases/latest/download/NekoPlayer-win-Setup.exe";
-			break;
-		}
-		case "Linux x86_64": 
-		{
-			window.location.href = "https://github.com/BoomboxRapsody/NekoPlayer/releases/latest/download/NekoPlayer-linux-x64.AppImage";
-			break;
-		}
-	}
+	window.location.href = "https://github.com/BoomboxRapsody/NekoPlayer/releases/latest/download/NekoPlayer-win-Setup.exe";
 }
 
 async function getLatestRelease(owner, repo) {
@@ -44,24 +32,10 @@ async function getLatestRelease(owner, repo) {
 	var elem = document.getElementById("dl_text");
 
 	console.log("The platform is " + platform);
-		
-	switch (platform) 
-	{
-		case "Win32": 
-		{
-			var key = 'download_windows'; 
-			var lang = getLang();
-			elem.innerHTML = translate(key, lang).replace("{version}", data.name);
-			break;
-		}
-		case "Linux x86_64": 
-		{
-			var key = 'download_linux'; 
-			var lang = getLang();
-			elem.innerHTML = translate(key, lang).replace("{version}", data.name);
-			break;
-		}
-	}
+	
+	var key = 'download_windows'; 
+	var lang = getLang();
+	elem.innerHTML = translate(key, lang).replace("{version}", data.name);
 	
     return data;
   } catch (error) {

@@ -74,7 +74,7 @@ body {
 .navbar .buttons .signup {
   border: 1px solid #fff;
   padding: 10px 20px;
-  border-radius: 0.375rem;
+  border-radius: 50vh;
   text-align: center;
   transition: 0.2s ease;
 }
@@ -163,7 +163,7 @@ body {
   text-decoration: none;
   color: #fff;
   padding: 12px 24px;
-  border-radius: 0.375rem;
+  border-radius: 50vh;
   font-weight: 600;
   transition: 0.2s ease;
   display: inline-block;
@@ -172,7 +172,7 @@ body {
   text-decoration: none;
   color: #fff;
   padding: 12px 24px;
-  border-radius: 0.375rem;
+  border-radius: 50vh;
   font-weight: 600;
   transition: 0.2s ease;
   display: inline-block;
@@ -188,11 +188,11 @@ body {
 }
 .hero-section .buttons .learn {
   border: 1px solid #fff;
-  border-radius: 0.375rem;
+  border-radius: 50vh;
 }
 .hero-section-2 .buttons .learn {
   border: 1px solid #fff;
-  border-radius: 0.375rem;
+  border-radius: 50vh;
 }
 .hero-section .buttons a:hover {
   background-color: #b06da0;
